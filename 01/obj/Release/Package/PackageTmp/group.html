@@ -1,0 +1,52 @@
+﻿<!doctype html><html><head>    <meta charset="UTF-8">  	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <title>Group List - jQuery EasyUI Mobile Demo</title>      <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/metro/easyui.css">      <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/mobile.css">      <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/icon.css">      <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/color.css">    <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.min.js"></script>      <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.easyui.min.js"></script>     <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.easyui.mobile.js"></script>     <script src="group.js"></script></head><body>	<div class="easyui-navpanel">		<header>			<div class="m-toolbar">				<span class="m-title">功能菜单</span>			</div>		</header>		<ul class="m-list">            <li class="m-list-group">平台首页</li>			<li><a href="javascript:void(0)" onclick="openit(this)">平台首页</a></li>            <li><a href="javascript:void(0)" onclick="openit01(this)">重新登陆</a></li>			<li class="m-list-group">位置服务</li>			<li><a href="javascript:void(0)" onclick="openit1(this)">设备状态</a></li>			<li><a href="javascript:void(0)" onclick="openit2(this)">实时查询</a></li>			<li><a href="javascript:void(0)" onclick="openit3(this)">停车查询</a></li>			<li><a href="javascript:void(0)" onclick="openit(this)">报警查询</a></li>			<li><a href="javascript:void(0)" onclick="openit(this)">异常查询</a></li>			<li class="m-list-group">统计报表</li>			<li><a href="javascript:void(0)" onclick="openit(this)">里程明细</a></li>			<li><a href="javascript:void(0)" onclick="openit(this)">温度明细</a></li>            <li><a href="javascript:void(0)" onclick="openit(this)">油量明细</a></li>		</ul>	</div>	<div id="p2" class="easyui-navpanel">		<header>			<div class="m-toolbar">				<span id="p2-title" class="m-title">Detail</span>                <div class="m-left">                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">Back</a>                </div>			</div>		</header>        <div style="margin:50px 0 0;text-align:center">            <a href="javascript:void(0)" class="easyui-linkbutton" style="width:100px;height:30px" onclick="$.mobile.back()">Go Back</a>        </div>	</div>    <div id="p3" class="easyui-navpanel">        <header>
+			<div class="m-toolbar">
+				<span id="p3-title" class="m-title">Detail</span>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">Back</a>
+                </div>
+			</div>
+		</header>        <div class="easyui-navpanel" style="position:relative;padding:20px">
+		    <form id="ff">
+			    <div>
+				    <label>车牌号</label>
+				    <!--<input id="car" class="easyui-textbox" prompt="输入车牌号" style="width:100%">-->
+                    <input id="input_car" class="easyui-combobox" style="width:100%" name="input_car" 
+                    data-options="valueField:'VehicleId',textField:'VehicleId',mode:'remote',url:'api.ashx?api=getFilterVehicleId&car='" />
+			    </div>
+			    <!--<div>
+				    <label>Birthday</label>
+				    <input class="easyui-datebox" prompt="Birthday" data-options="editable:false,panelWidth:220,panelHeight:240,iconWidth:30" style="width:100%">
+			    </div>
+			    <div>
+				    <label>Password</label>
+				    <input class="easyui-textbox" type="password" prompt="Password" style="width:100%">
+			    </div>
+			    <div>
+				    <label>Number</label>
+				    <input class="easyui-numberbox" prompt="Number" style="width:100%">
+			    </div>
+			    <div>
+				    <label>Volumn</label>
+				    <input class="easyui-slider" value="10" style="width:100%">
+			    </div>-->
+		    </form>
+            <div style="padding:20px">
+			    <a href="javascript:void(0)" onclick="qry_pos()" class="easyui-linkbutton c6" style="width:100%;height:33px;">立即查询</a>                
+		    </div>
+            <div style="margin:5px 0 0;text-align:center">                <a href="javascript:void(0)" class="easyui-linkbutton" style="width:100px;height:30px" onclick="$.mobile.back()">Go Back</a>            </div>
+	    </div>
+	    <style scoped>
+		    form label{
+			    display: block;
+			    margin: 10px 0 5px 0;
+		    }
+	    </style>	</div>	<script type="text/javascript">		function openit(target){			var text = $(target).text();			$('#p2-title').html(text);			$.mobile.go('#p2');		}		function openit1(target) {
+		    //var text = $(target).text();		    //$('#p3-title').html(text);		    //$.mobile.go('#p3');
+		    window.location.href = "/last_poi.aspx";
+		}				function openit01(target) {
+		    window.location.href = "/login.html";
+		}		function openit2(target) {
+		    window.location.href = "/realtime_pos.aspx";
+		}		function openit3(target) {
+		    window.location.href = "/history_park.aspx";
+		}	</script></body>	</html>

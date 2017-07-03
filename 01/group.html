@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Group List - jQuery EasyUI Mobile Demo</title>  
+    <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/metro/easyui.css">  
+    <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/mobile.css">  
+    <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/icon.css">  
+    <link rel="stylesheet" type="text/css" href="lib/jquery-easyui-1.4.4/themes/color.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.min.js"></script>  
+    <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.easyui.min.js"></script> 
+    <script type="text/javascript" src="lib/jquery-easyui-1.4.4/jquery.easyui.mobile.js"></script> 
+</head>
+<body>
+	<div class="easyui-navpanel">
+		<header style="background-color:#359ff2;">
+			<div class="m-toolbar" >
+				<span class="m-title" >功能菜单</span>
+                <div class="m-left">
+                    <a href="login.html" class="easyui-linkbutton m-back" plain="true" outline="true" >退出</a>
+                </div>
+			</div>
+		</header>
+        <div style="background:url(images/BG003.jpg) center no-repeat;height:200px;width:100%;overflow:hidden">
+		    <div class="div009"><img style="height:70px;" src="images/head1.jpg" class="img001" /></div>
+		    <div class="div010">admin</div>
+	    </div>
+
+        <div class="div011">
+		    <table class="table001" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" >
+			    <tr style=" height:120px;">
+				    <td align="center" width="33%" onclick="$.mobile.go('#p2')">
+					    <div class="div012"><img src="images/Img002.jpg" class="img001"  id="img1"  /></div>
+					    <div class="div013" >任务管理</div>
+				    </td>
+				    <td align="center" width="33%" onclick="$.mobile.go('#p3')">
+					    <div class="div012"><img src="images/Img003.jpg" class="img001" id="img2" /></div>
+					    <div class="div013">查询管理</div>
+				    </td>
+                    <td align="center" width="33%" onclick="$.mobile.go('#p4')">
+					    <div class="div012"><img src="images/Img006.jpg" class="img001" id="img4" /></div>
+					    <div class="div013">车长报单</div>
+				    </td>
+			    </tr>
+			    <tr style=" height:120px;">
+				    <td align="center" width="33%" onclick="$.mobile.go('#p5')">
+					    <div class="div012"><img src="images/Img007.jpg" class="img001" id="img6" /></div>
+					    <div class="div013">统计分析</div>
+				    </td>
+			    </tr>
+		    </table>
+        </div>
+	</div>
+	<div id="p2" class="easyui-navpanel">
+		<header>
+			<div class="m-toolbar">
+				<span id="p2-title" class="m-title">任务管理</span>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">返回</a>
+                </div>
+			</div>
+		</header>
+        <ul class="m-list" style="font-size:24px;">
+            <li><a href="/task.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;任务单</a></li>
+            <li><a href="/ship.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;运输单</a></li>
+        </ul>
+	</div>
+    <div id="p3" class="easyui-navpanel">
+        <header>
+			<div class="m-toolbar">
+				<span id="p3-title" class="m-title">查询管理</span>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">返回</a>
+                </div>
+			</div>
+		</header>
+        <div class="easyui-navpanel" style="position:relative;padding:20px">
+            <ul class="m-list" style="font-size:24px;">
+			    <li><a href="/last_poi.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;最后位置</a></li>
+			    <li><a href="/realtime_pos.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;实时查询</a></li>
+			    <li><a href="/history_park.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;停车查询</a></li>
+			    <li><a href="/history_warn.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;报警查询</a></li>
+			    <li><a href="/history_lose.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;异常查询</a></li>
+                <li><a href="/history_pos.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;历史轨迹回放</a></li>
+            </ul>
+	    </div>
+	</div>
+    <div id="p4" class="easyui-navpanel">
+		<header>
+			<div class="m-toolbar">
+				<span id="Span1" class="m-title">车长报单</span>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">返回</a>
+                </div>
+			</div>
+		</header>
+        <div class="easyui-navpanel" style="position:relative;padding:20px">
+            <ul class="m-list" style="font-size:24px;">
+                <li><a href="/car_manager.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="loading" />&nbsp;车长报单</a></li>
+            </ul>
+	    </div>
+	</div>
+    <div id="p5" class="easyui-navpanel">
+		<header>
+			<div class="m-toolbar">
+				<span id="Span2" class="m-title">统计管理</span>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton m-back" plain="true" outline="true" onclick="$.mobile.back()">返回</a>
+                </div>
+			</div>
+		</header>
+        <div class="easyui-navpanel" style="position:relative;padding:20px">
+            <ul class="m-list" style="font-size:24px;">
+                <li><a href="/history_mileage_total.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="Alternate Text" />&nbsp;里程明细</a></li>
+			    <li><a href="/oil_detail.aspx" ><img style="width:25px;height:25px;" src="images/Icon001.jpg" alt="Alternate Text" />&nbsp;油量明细</a></li>
+            </ul>
+	    </div>
+	</div>
+    <div class="top_bar" style="-webkit-transform:translate3d(0,0,0)">
+      <nav>
+        <ul id="top_menu" class="top_menu">
+            <li> <a href="group.html"><img src="images/state_two_10.png"><label>首页</label></a></li>
+            <li> <a href="javascript:void(0)"><img src="images/state_two_03.png"><label>分享</label></a></li>
+            <li> <a href="javascript:void(0)"><img src="images/state_two_05.png"><label>电话</label></a></li>
+            <li> <a href="javascript:void(0)"><img src="images/state_two_07.png"><label>短信</label></a></li>
+        </ul>
+      </nav>
+    </div>
+	
+	<script type="text/javascript">
+		function openit(target){
+			var text = $(target).text();
+			$('#p2-title').html(text);
+			$.mobile.go('#p2');
+		}
+	</script>
+    <script src="common.js"></script>
+    <script src="group.js"></script>
+</body>	
+</html>

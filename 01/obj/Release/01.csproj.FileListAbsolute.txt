@@ -1,0 +1,12 @@
+C:\Users\0003\test\C#\baidumap\01\01\bin\01.dll
+C:\Users\0003\test\C#\baidumap\01\01\bin\01.pdb
+C:\Users\0003\test\C#\baidumap\01\01\obj\Release\01.csprojResolveAssemblyReference.cache
+C:\Users\0003\test\C#\baidumap\01\01\obj\Release\01.dll
+C:\Users\0003\test\C#\baidumap\01\01\obj\Release\01.pdb
+C:\Users\0003\test\C#\baidumap\01\01\bin\Newtonsoft.Json.dll
+C:\Users\0006\web_app\baidumap\01\01\bin\01.dll
+C:\Users\0006\web_app\baidumap\01\01\bin\01.pdb
+C:\Users\0006\web_app\baidumap\01\01\bin\Newtonsoft.Json.dll
+C:\Users\0006\web_app\baidumap\01\01\obj\Release\01.csprojResolveAssemblyReference.cache
+C:\Users\0006\web_app\baidumap\01\01\obj\Release\01.dll
+C:\Users\0006\web_app\baidumap\01\01\obj\Release\01.pdb
